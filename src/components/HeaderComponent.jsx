@@ -15,16 +15,26 @@ function HeaderComponent() {
   const styles = {
     header: {
       position: "fixed",
-      top: "0px", // تحت TopBar
+
+      top: "20px",
       left: 0,
       width: "100%",
       height: "80px",
-      background: "#961D27",
+      background: "white",
+
       zIndex: 999,
       display: "flex",
       alignItems: "center",
-      justifyContent:"center",
-     
+      justifyContent: "space-between",
+      padding: "0 50px",
+      boxSizing: "border-box",
+      boxShadow: "0 2px 6px rgba(0,0,0,0.1)"
+    },
+    clinicName: {
+      fontWeight: "bold",
+      fontSize: "22px",
+      color: "#333",
+      textTransform: "uppercase"
     },
     nav: {
       display: "flex",
@@ -43,6 +53,7 @@ function HeaderComponent() {
 
   return (
     <header style={styles.header}>
+      <div style={styles.clinicName}>Royal Care Vet Hospital</div>
       <nav style={styles.nav}>
         {menuItems.map((item, index) => (
           <a 
