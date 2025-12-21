@@ -1,8 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import HeaderComponent from "./components/HeaderComponent";
+import Services from "./components/Services";
 
 
+export default App;
 
-export default App
+function App() {
+  return (
+   
+    <div>
+      <HeaderComponent/>
+      
+       <Services />
+      
+      <h1>مرحباً بك في موقع اسلام!</h1>
+    </div>
+   ) ; 
+}
+
+

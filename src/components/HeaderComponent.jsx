@@ -1,4 +1,4 @@
-/ HeaderComponent.jsx
+// HeaderComponent.jsx
 import React from "react";
 
 function HeaderComponent() {
@@ -15,11 +15,11 @@ function HeaderComponent() {
   const styles = {
     header: {
       position: "fixed",
-      top: "20px", // تحت TopBar
+      top: "0px", // تحت TopBar
       left: 0,
       width: "100%",
       height: "80px",
-      background: "White",
+      background: "#961D27",
       zIndex: 999,
       display: "flex",
       alignItems: "center",
@@ -32,7 +32,7 @@ function HeaderComponent() {
     },
     link: {
       textDecoration: "none",
-      color: "#333",
+      color: "#fffafaff",
       fontSize: "16px",
       textTransform: "capitalize",
       fontWeight: 500,
@@ -50,7 +50,7 @@ function HeaderComponent() {
             href={item.href} 
             style={styles.link}
             onMouseEnter={e => e.target.style.color = "#961D27"}
-            onMouseLeave={e => e.target.style.color = "#333"}
+            onMouseLeave={e => e.target.style.color = "#faf3f3ff"}
           >
             {item.name}
           </a>
