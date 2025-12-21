@@ -30,7 +30,7 @@ function HeaderComponent() {
     },
     clinicName: {
       fontWeight: "bold",
-      fontSize: "22px",
+      fontSize: "17px",
       color: "#333",
       textTransform: "uppercase"
     },
@@ -46,12 +46,20 @@ function HeaderComponent() {
       fontWeight: 500,
       cursor: "pointer",
       transition: "color 0.3s",
+      fontFamily: '"Playfair Display", serif' // روابط القائمة بالخط الجديد
     }
   };
 
   return (
     <header style={styles.header}>
-      <div style={styles.clinicName}>Royal Care Vet Hospital</div>
+      <div 
+        style={{
+          ...styles.clinicName,
+          fontFamily: '"Playfair Display", serif' // العنوان بالخط الجديد
+        }}
+      >
+        Royal Care Vet Hospital
+      </div>
       <nav style={styles.nav}>
         {menuItems.map((item, index) => (
           <a 
