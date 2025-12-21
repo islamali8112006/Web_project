@@ -6,17 +6,30 @@ body {
     height: 100%;  
     font-family: "Helvetica Neue";
     overflow-x: hidden;
+     
 }
 
 /* ===== Hero Section ===== */
 .hero {
 width: 100vw;
-height: 600px;
+height: 400px;
 background-image: url("/images/coverrrr.jpg");
-background-position: center center;
+background-position: center ;
 background-size: cover;
+margin-Left: calc(-50vw + 50%);
 background-repeat: no-repeat;
-display: flex;
+/* display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+/* توسيط النص عمودياً */
+/* padding-top: 50px;
+margin: 0; */ 
+}
+.hero-content  {
+    width: 100vw;
+    display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
@@ -25,7 +38,6 @@ text-align: center;
 padding-top: 50px;
 margin: 0;
 }
-
 
 .hero-subtitle {
     text-align: center;
