@@ -1,0 +1,202 @@
+/* ===== General ===== */
+body {
+     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;  
+    font-family: "Helvetica Neue";
+    overflow-x: hidden;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+width: 100vw;
+height: 600px;
+background-image: url("/images/coverrrr.jpg");
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+/* توسيط النص عمودياً */
+padding-top: 50px;
+margin: 0;
+}
+
+
+.hero-subtitle {
+    text-align: center;
+    font-size: 72px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 200;
+font-family: 'Glyphicons Halflings';    
+}
+.hero-text {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+/* ===== Team ===== */
+.team {
+    background-color: #fff;
+    padding: 30px 2% 90px;
+
+}
+
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 70px;
+font-family: 'Glyphicons Halflings';    
+    font-weight: 100;
+    font-size: 72px;
+}
+
+.doctor {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+    background: #fffaf0;
+}
+
+.doctor img {
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.doctor img:hover {
+    transform: translateY(-12px) scale(1.05);
+
+}
+.doctor-btn {
+  margin-top: 12px;
+  padding: 10px 22px;
+
+  background: #961D27;
+  color: white;
+  border: none;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.doctor-btn:hover {
+  background: #7c1620;
+  transform: translateY(-2px);
+}
+.doctor-box {
+  margin-top: 18px;
+  padding: 18px 22px;
+
+  background: #fff;
+  border-left: 4px solid #961D27;
+
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  animation: fadeIn 0.4s ease;
+}
+
+
+
+
+.doctor-info h3 {
+    font-size: 26px;
+    margin-bottom: 6px;
+      text-align: left; /* هذه تضبط النص على اليسار */
+
+}
+
+.highlight {
+    color: #961D27;
+    font-weight: 600;
+}
+
+.doctor-info h4 {
+    color: #777;
+    font-weight: 500;
+    margin-bottom: 18px;
+      text-align: left; /* هذه تضبط النص على اليسار */
+
+}
+
+.doctor-info p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* ===== Clinic ===== */
+.clinic {
+    padding: 20px 2% 60px;
+    text-align: center;
+    margin-top: -50px;
+
+}
+
+.clinic h2 {
+    font-size: 62px;
+    margin-bottom: 20px;
+font-family: 'Glyphicons Halflings';    
+}
+
+.clinic-intro {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+    
+}
+
+.clinic-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.clinic-images img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+}
+.clinic img:hover {
+    transform: translateY(-12px) scale(1.05);
+
+}
+
+section {
+    scroll-margin-top: 0;
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .doctor {
+        flex-direction: column;
+        text-align: center;
+    }
+    .doctor img {
+        width: 220px;
+        height: auto;
+    }
+}
+
