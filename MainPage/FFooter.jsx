@@ -17,10 +17,9 @@ function Footer() {
         mt: "auto",
         pt: 2,
         pb: 1.5,
-        fontFamily: '"Playfair Display", serif'
+        fontFamily: '"Helvetica Neue", sans-serif' // هنا غيرنا الخط
       }}
     >
-    
       <Box
         sx={{
           display: "flex",
@@ -31,7 +30,6 @@ function Footer() {
           mb: 2
         }}
       >
-        
         <Box
           sx={{
             display: "flex",
@@ -41,7 +39,7 @@ function Footer() {
           }}
         >
           <img src={d} alt="Logo" width="50" style={{ marginBottom: "6px" }} />
-          <Typography variant="h6" sx={{ fontWeight: "bold", color: "#ffd700" }}>
+          <Typography variant="h6" sx={{ fontWeight: "bold", color: "#fffaf0" }}>
             ROYAL CARE
           </Typography>
           <Typography sx={{ opacity: 0.9, fontSize: "0.8rem" }}>
@@ -57,7 +55,7 @@ function Footer() {
         <Box sx={{ minWidth: "140px" }}>
           <Typography
             variant="subtitle1"
-            sx={{ fontWeight: "bold", mb: 0.5, color: "#ffd700" }}
+            sx={{ fontWeight: "bold", mb: 0.5, color: "#fffaf0" }}
           >
             OUR SERVICES
           </Typography>
@@ -68,11 +66,10 @@ function Footer() {
           ))}
         </Box>
 
-      
         <Box sx={{ minWidth: "160px" }}>
           <Typography
             variant="subtitle1"
-            sx={{ fontWeight: "bold", mb: 0.5, color: "#ffd700" }}
+            sx={{ fontWeight: "bold", mb: 0.5, color: "#fffaf0" }}
           >
             CONTACT INFO
           </Typography>
@@ -87,11 +84,10 @@ function Footer() {
           </Typography>
         </Box>
 
-        
         <Box sx={{ minWidth: "160px" }}>
           <Typography
             variant="subtitle1"
-            sx={{ fontWeight: "bold", mb: 0.5, color: "#ffd700" }}
+            sx={{ fontWeight: "bold", mb: 0.5, color: "#fffaf0" }}
           >
             GET IN TOUCH
           </Typography>
@@ -99,14 +95,14 @@ function Footer() {
             variant="contained"
             fullWidth
             sx={{
-              background: "linear-gradient(45deg, #ffd700, #ffffff)",
+              background: "linear-gradient(45deg, #fffaf0, #ffffff)",
               color: "#961D27",
               fontWeight: "bold",
               py: 0.8,
               borderRadius: "8px",
               fontSize: "0.8rem",
               "&:hover": {
-                background: "linear-gradient(45deg, #ffffff, #ffd700)"
+                background: "linear-gradient(45deg, #ffffff, #fffaf0)"
               }
             }}
           >
@@ -115,7 +111,6 @@ function Footer() {
         </Box>
       </Box>
 
-  
       <Box
         sx={{
           textAlign: "center",
