@@ -1,21 +1,28 @@
+import { Routes, Route } from "react-router-dom";
 import './App.css';
-import HeaderComponent from "./components/HeaderComponent";
-import Services from "./components/Services";
+import Services from "./containers/Services";
 
+import ProductList from './containers/ProductList';
+function App() {
+   return (
+    <div>
+      <Routes>
+        {/* الصفحة الرئيسية */}
+         { <Route path="/" element={<Services />} />  }
+
+        {/* صفحة المنتجات */}
+        <Route
+          path="/products" element={ <div>  <ProductList />  </div>  }
+        />
+
+        {/* صفحة لأي رابط غير موجود */}
+        <Route path="*" element={<h1>Page Not Found</h1>} />
+      </Routes>
+    </div>
+  );
+}
 
 export default App;
 
-function App() {
-  return (
-   
-    <div>
-      <HeaderComponent/>
-      
-       <Services />
-      
-      <h1>مرحباً بك في موقع اسلام!</h1>
-    </div>
-   ) ; 
-}
 
 
