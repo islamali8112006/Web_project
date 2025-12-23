@@ -1,0 +1,256 @@
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 100px;
+  margin: 10px auto;
+}
+
+/* ===== Page Title ===== */
+.page-title {
+  text-align: center;
+  margin: 0 0 20px;
+  color: #800000;
+  font-size: 2.8rem;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.page-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 4px;
+  background: linear-gradient(to right, #961D27, #B22222);
+  border-radius: 2px;
+}
+
+/* ===== Intro Text ===== */
+.intro-text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fffaf0;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.08);
+  border-left: 5px solid #961D27;
+}
+
+/* ===== Section Title ===== */
+.section-title {
+  color: #961D27;
+  margin: 40px 0 20px;
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+
+/* ===== Animals Grid ===== */
+.animals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* ===== Animal Card ===== */
+.animal-card {
+  background-color: #fffaf0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(128, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animal-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(128, 0, 0, 0.15);
+}
+
+.animal-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 5px solid #961D27;
+}
+
+.animal-info {
+  padding: 20px;
+}
+
+.animal-name {
+  font-size: 1.6rem;
+  color: #961D27;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.animal-name i {
+  margin-right: 10px;
+  color: #B22222;
+}
+
+.animal-type {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #961D27;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* ===== Animal Details ===== */
+.animal-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.detail {
+  text-align: center;
+  flex: 1;
+}
+
+.detail-label {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.detail-value {
+  font-weight: bold;
+  color: #333;
+}
+
+/* ===== Buttons ===== */
+.adopt-btn,
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #961D27, #B22222);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.adopt-btn:hover,
+.submit-btn:hover {
+  background: linear-gradient(to right, #961D27, #9B1C1C);
+  transform: translateY(-2px);
+}
+
+/* ===== Adoption Form ===== */
+.adoption-form-container {
+  background-color: #fffaf0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(128, 0, 0, 0.08);
+  margin-bottom: 50px;
+  border-top: 5px solid #961D27;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.form-group {
+  flex: 1 0 300px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.form-group.full-width {
+  flex: 1 0 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #961D27;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #961D27;
+  box-shadow: 0 0 0 2px rgba(128, 0, 0, 0.1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .animals-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .page-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .animals-container {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+}
+
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  height: 340px;      
+  object-fit: cover;
+  display: block;
+}
