@@ -10,7 +10,7 @@ function Services({ services }) {
         gap: "20px",
         maxWidth: "1000px",
         margin: "0 auto",
-        paddingLeft: "40px" // ← الزحزحة لليمين
+        paddingLeft: "40px" 
       }}
     >
       {services.map((service, index) => (

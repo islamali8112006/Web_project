@@ -11,26 +11,26 @@ function AnimalHospital() {
         height: "100vh",
         padding: "40px 50px",
         boxSizing: "border-box",
-        fontFamily: '"Playfair Display", serif', // تم تعديل الخط
+        fontFamily: '"Playfair Display", serif',
         backgroundColor: "#ffffff",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
       }}
     >
-      {/* الفقرة الأولى */}
+      
       <AnimalIntro />
 
-      {/* الصورة + الشهادة */}
+     
       <div
         style={{
           display: "flex",
           alignItems: "center",
           gap: "50px",
-          flex: "1"
+          flex: "1",
+          flexDirection: "row", 
         }}
       >
-        {/* الصورة */}
         <div style={{ flex: "1" }}>
           <img
             src={CatImage}
@@ -39,14 +39,40 @@ function AnimalHospital() {
               width: "100%",
               height: "100%",
               objectFit: "cover",
-              borderRadius: "6px"
+              borderRadius: "6px",
             }}
           />
         </div>
 
-        {/* رأي أول زبون */}
         <FirstClientReview />
       </div>
+
+      
+      <style>
+        {`
+          /* للتابلت */
+          @media (max-width: 768px) {
+            section > div {
+              flex-direction: column !important;
+              gap: 20px !important;
+            }
+            section img {
+              height: auto !important;
+            }
+          }
+
+          
+          @media (max-width: 480px) {
+            section > div {
+              gap: 10px !important;
+            }
+            section img {
+              width: 100% !important;
+              height: auto !important;
+            }
+          }
+        `}
+      </style>
     </section>
   );
 }

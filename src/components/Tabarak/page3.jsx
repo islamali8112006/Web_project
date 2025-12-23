@@ -1,6 +1,6 @@
 import React from "react";
 
-// الصور
+
 import catt from "../images/catt.jpeg";
 import dog from "../images/dog.jpeg";
 import cat from "../images/catt2.jpeg";
@@ -44,13 +44,13 @@ function ThirdSection() {
         padding: 0,
         boxSizing: "border-box",
         margin: 0,
-        fontFamily: '"Playfair Display", serif' // أضفنا الخط
+        fontFamily: '"Playfair Display", serif' 
       }}
     >
-      {/* الخدمات */}
+    
       <Services services={services} />
 
-      {/* خط فاصل */}
+    
       <div
         style={{
           height: "3px",
@@ -60,7 +60,7 @@ function ThirdSection() {
         }}
       />
 
-      {/* صورة نهاية الصفحة */}
+      
       <div style={{ width: "100%" }}>
         <img
           src={catDog}

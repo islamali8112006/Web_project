@@ -1,4 +1,4 @@
-// HeaderComponent.jsx
+
 import React from "react";
 
 function HeaderComponent() {
@@ -46,7 +46,7 @@ function HeaderComponent() {
       fontWeight: 500,
       cursor: "pointer",
       transition: "color 0.3s",
-      fontFamily: '"Playfair Display", serif' // روابط القائمة بالخط الجديد
+      fontFamily: '"Playfair Display", serif' 
     }
   };
 
@@ -55,7 +55,7 @@ function HeaderComponent() {
       <div 
         style={{
           ...styles.clinicName,
-          fontFamily: '"Playfair Display", serif' // العنوان بالخط الجديد
+          fontFamily: '"Playfair Display", serif' 
         }}
       >
         Royal Care Vet Hospital

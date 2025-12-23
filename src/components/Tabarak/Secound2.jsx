@@ -7,7 +7,7 @@ function FirstClientReview() {
         flex: "1",
         padding: "25px",
         borderRadius: "8px",
-        backgroundColor: "#961D27"
+     
       }}
     >
       <h3
@@ -15,7 +15,9 @@ function FirstClientReview() {
           fontSize: "24px",
           fontWeight: "400",
           marginBottom: "15px",
-          color: "white"
+          color: "black",
+           textShadow: "2px 2px 6px rgba(0,0,0,0.3)"
+        
         }}
       >
         Our first client said…
@@ -25,7 +27,7 @@ function FirstClientReview() {
         style={{
           fontSize: "15px",
           lineHeight: "1.8",
-          color: "white"
+          color: "black"
         }}
       >
         "Everyone on staff at Royal Care Vet Hospital is simply amazing –
