@@ -1,9 +1,9 @@
-
 import React from "react";
+import { Link } from "react-router-dom";
 
 function HeaderComponent() {
   const menuItems = [
-    { name: "About", href: "/about" },
+    { name: "About", href: "/Contents" },
     { name: "Services", href: "/services" },
     { name: "Adoption Center", href: "/adoption" },
     { name: "Online Shop", href: "/online-shop" },
@@ -62,15 +62,15 @@ function HeaderComponent() {
       </div>
       <nav style={styles.nav}>
         {menuItems.map((item, index) => (
-          <a 
-            key={index} 
-            href={item.href} 
+          <Link
+            key={index}
+            to={item.href}  // بدل href
             style={styles.link}
             onMouseEnter={e => e.target.style.color = "#961D27"}
             onMouseLeave={e => e.target.style.color = "#333"}
           >
             {item.name}
-          </a>
+          </Link>
         ))}
       </nav>
     </header>
