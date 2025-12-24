@@ -8,7 +8,7 @@ function HeaderComponent() {
     { name: "Adoption Center", href: "/adoption" },
     { name: "Online Shop", href: "/online-shop" },
     { name: "Rescue Stories", href: "/rescue-stories" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "Contact Us", href: "/ContactPage" },
     { name: "Request an appointment", href: "/request-an-appointment" }
   ];
 

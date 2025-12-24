@@ -17,7 +17,7 @@ function Footer() {
         mt: "auto",
         pt: 2,
         pb: 1.5,
-        fontFamily: '"Helvetica Neue", sans-serif' // هنا غيرنا الخط
+        fontFamily: '"Helvetica Neue", sans-serif' 
       }}
     >
       <Box

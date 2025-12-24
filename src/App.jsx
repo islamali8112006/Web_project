@@ -1,12 +1,15 @@
 import { useState } from 'react'
+
 import { BrowserRouter , Routes, Route } from "react-router-dom";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import ContainerComponent from "./components/container.jsx";
+import ContainerComponent from "./mainPage/container.jsx";
 import Contents from "./AboutUs/Contents/Contents.jsx";
-import HeaderComponent from  "./components/Header/header";
-import TopBar from "./components/Top-header.jsx";
+import HeaderComponent from  "./mainPage/Header/header";
+import TopBar from "./mainPage/Top-header.jsx";
+
+
 function App() {
    return (
     <div>
@@ -15,7 +18,8 @@ function App() {
       <Routes>
         
        <Route path="/" element={<ContainerComponent/>} />  
-       <Route path="/Contents" element={<Contents/>} />  
+       <Route path="/Contents" element={<Contents/>} /> 
+        {/* <Route path="/ContactPage" element={<ContactPage/>} />   */}
        {/* <Route path="/Services" element={<Services />} /> 
       <Route path="/products" element={ <div>  <ProductList />  </div>  } /> */}
 
@@ -25,5 +29,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App
