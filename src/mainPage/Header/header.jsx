@@ -6,7 +6,7 @@ function HeaderComponent() {
     { name: "About", href: "/Contents" },
     { name: "Services", href: "/services" },
     { name: "Adoption Center", href: "/adoption" },
-    { name: "Online Shop", href: "/online-shop" },
+    { name: "Online Shop", href: "/ProductList" },
     { name: "Rescue Stories", href: "/rescue-stories" },
     { name: "Contact Us", href: "/ContactPage" },
     { name: "Request an appointment", href: "/request-an-appointment" }
