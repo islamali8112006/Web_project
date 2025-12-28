@@ -6,7 +6,7 @@ const HeroSection = () => {
       style={{
         width: "100vw",
         marginLeft: "calc(-50vw + 50%)",
-        height: "300px",
+        height: "500px",
         backgroundImage: "url(/images/hero-dogs.png)",
         backgroundSize: "cover",
         backgroundPosition: "center"

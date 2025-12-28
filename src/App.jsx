@@ -1,43 +1,39 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './App.css';
 
-import { useState } from 'react'
-
-import { BrowserRouter , Routes, Route } from "react-router-dom";
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ContainerComponent from "./mainPage/container.jsx";
-import Contents from "./AboutUs/Contents/Contents.jsx";
-import HeaderComponent from  "./mainPage/Header/header";
-import Footer from  "./mainPage/FFooter";
-import TopBar from "./mainPage/Top-header.jsx";
+import ContainerComponent from "./tabark/container.jsx";
+import About from "./roaa/Contents/About.jsx";
 import Services from "./islam/containers/Services.jsx";
-import ProductList from "./islam/containers/ProductList.jsx";
+import OnlineShop from "./islam/containers/OnlineShop.jsx";
+import AdoptionPage from "./sara/container/AdoptionCenter.jsx";
+import RescueStories from "./Hala/components/h_r_m/RescueStories";
+import ContactUs from "./Hala/components/Contact/ContactUs";
+import Layout from "./Layout.jsx";
+import AppointmentPage from "./Soma/components/RequestAnAppointment.jsx";
 
 function App() {
-   return (
-    <div>
-      <TopBar/>
-       <HeaderComponent/>
+  return (
+   
       <Routes>
-        
-       <Route path="/" element={<ContainerComponent/>} />  
-       <Route path="/Contents" element={<Contents/>} /> 
-        {/* <Route path="/ContactPage" element={<ContactPage/>} />   */}
-       <Route path="/Services" element={<Services />} /> 
-      <Route path="/ProductList" element={ <div>  <ProductList />  </div>  } />
+        {/* كل الصفحات اللي فيها هيدر وفوتر */}
+        <Route element={<Layout/>}>
+          <Route path="/" element={<ContainerComponent />} />
+            <Route path="/home" element={<ContainerComponent />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/RescueStories" element={<RescueStories />} />
+          <Route path="/RequestAnAppointment" element={<AppointmentPage />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/AdoptionCenter" element={<AdoptionPage />} />
+          <Route path="/OnlineShop" element={<OnlineShop />} />
+        </Route>
 
-       
-
+        {/* صفحة 404 بدون هيدر وفوتر */}
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
-        <Footer/>
-    </div>
+    
   );
 }
 
-
 export default App;
-
-
-
 

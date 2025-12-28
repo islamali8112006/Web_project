@@ -1,6 +1,6 @@
 import React from "react";
 
-const IntroSection = () => {
+const OnlineIntro = () => {
   return (
     <section style={{ padding: "60px 20px" }}>
       <img
@@ -9,7 +9,7 @@ const IntroSection = () => {
         style={{
           width: "100px",
           height: "auto",
-          marginBottom: "-2px",
+          marginBottom: "-1px",
           display: "block",
           marginLeft: "auto",
           marginRight: "auto"
@@ -25,7 +25,7 @@ const IntroSection = () => {
           textAlign: "center"
         }}
       >
-        SERVICES
+        ONLINE SHOP
       </h1>
 
       <p
@@ -39,18 +39,14 @@ const IntroSection = () => {
           textAlign: "justify"
         }}
       >
-        At Royal Care Veterinary Clinic, we understand how much your pets mean
-        to you—they are family. That’s why we are committed to providing
-        compassionate, high-quality veterinary care tailored to your pet’s
-        unique needs. From routine wellness checkups to advanced medical
-        treatments, our experienced team is here to support your pet through
-        every stage of life. We take pride in building lasting relationships
-        with our clients and ensuring a safe, caring environment for every
-        visit. If you have any questions about our services or would like to
-        schedule an appointment, <b>we are always happy to assist you.</b>
+        At Royal Care Online Shop, we believe that quality products make a real difference in everyday life.
+        That’s why we carefully select and offer a wide range of products designed to meet your needs and expectations. 
+        Whether you’re browsing online for convenience or prefer to see and choose your items in person, we’ve got you covered.
+        You can explore our collection here on our website, visit our physical store for a hands-on shopping experience and personalized assistance.
+         <b>We’re always happy to help you find exactly what you’re looking for.</b>
       </p>
     </section>
   );
 };
 
-export default IntroSection;
+export default OnlineIntro;

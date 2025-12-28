@@ -3,34 +3,38 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import CardActions from '@mui/material/CardActions';
-
 export default function ProductCard({ product }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{
+       maxWidth: 250,
+   
+        height: 400,          // يخلي كل الكروت نفس الارتفاع
+        display: 'flex',
+        flexDirection: 'column',
+      
+     }}>
       <CardMedia
+  
         component="img"
-        height="140"
+        height="200"
+
         image={product.image}
         alt={product.name}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5">
+        <Typography gutterBottom variant="h5"sx={{ fontFamily: "Glyphicons Halflings", }}>
           {product.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary"sx={{ fontFamily: "Glyphicons Halflings", }}>
           {product.description}
         </Typography>
         <Typography variant="h6" color="primary">
           ${product.price}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small" variant="contained" color="primary">
-          Add to Cart
-        </Button>
-      </CardActions>
+     
+        
+      
     </Card>
   );
 }

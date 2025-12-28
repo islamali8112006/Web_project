@@ -6,7 +6,7 @@ const HeroONline = () => {
       style={{
         width: "100vw",
         marginLeft: "calc(-50vw + 50%)",
-        height: "300px",
+        height: "500px",
         backgroundImage: "url(/images/online.png)",
         backgroundSize: "cover",
         backgroundPosition: "center"

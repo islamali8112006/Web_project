@@ -1,0 +1,323 @@
+/*  General  */
+body {
+     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;  
+    font-family: "Helvetica Neue";
+    overflow-x: hidden;
+     
+}
+
+
+.homehero {
+width: 100vw;
+height: 500px;
+background-image: url("/images/coverrrr.jpg");
+background-position: center ;
+background-size: cover;
+margin-Left: calc(-50vw + 50%);
+background-repeat: no-repeat;
+
+}
+.hero-content  {
+    width: 100vw;
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+padding-top: 50px;
+margin: 0;
+}
+
+.hero-subtitle {
+    text-align: center;
+    font-size: 72px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+font-family: 'Glyphicons Halflings';    
+}
+.hero-subtitle::before{
+    content: "";
+    display: block;
+    width: 120px;        
+    height: 50px;
+margin: 0 auto -33px;
+
+    background: url("/images/Adobe Express - file.png") no-repeat center;
+    background-size: contain;
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+/* Team  */
+
+.team {
+    background-color: #fff;
+    padding: 10px 2% 90px;
+
+}
+
+
+.team h2 {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 72px;
+    color: #233746;
+}
+
+.team h2::before {
+    content: "";
+    display: block;
+       width: 120px;        
+    height: 50px;
+margin: 0 auto -28px;
+ 
+    background: url("/images/Adobe Express - file.png") no-repeat center;
+    background-size: contain;
+}
+
+
+.doctor {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    background: #fffaf0;
+      align-items: stretch; 
+
+
+}
+
+.doctor img {
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.doctor img:hover {
+    transform: translateY(-12px) scale(1.05);
+
+}
+
+
+.doctor-btn {
+    margin-top: auto;        
+    width: 150px;            
+    height: 44px;            
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1; 
+
+    padding: 0;              
+    background: #961D27;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+.doctor-btn:hover {
+  background: #7c1620;
+  transform: translateY(-2px);
+}
+
+.doctor-box {
+  margin-top: 18px;
+  padding: 18px 22px;
+  background: #fff;
+  border-left: 4px solid #961D27;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+}
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.doctor-info h3 {
+    font-size: 26px;
+    margin-bottom: 6px;
+      text-align: left;  
+
+}
+
+.highlight {
+    color: #961D27;
+    font-weight: 600;
+}
+
+.doctor-info h4 {
+    color: #777;
+    font-weight: 500;
+    margin-bottom: 18px;
+      text-align: left; 
+
+}
+
+.doctor-info p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+
+    /* Clinic  */
+.clinic {
+    padding: 5px 2% 60px;
+    text-align: center;
+    margin-top: -70px;
+
+}
+
+.clinic h2 {
+    font-size: 62px;
+    margin-bottom: 20px;
+font-family: 'Glyphicons Halflings';    
+}
+.clinic h2::before{
+    content: "";
+    display: block;
+        width: 120px;        
+    height: 50px;
+margin: 0 auto -28px;
+
+    background: url("/images/Adobe Express - file.png") no-repeat center;
+    background-size: contain;
+}
+.clinic-intro {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+    
+}
+
+.clinic-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.clinic-images img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+}
+.clinic img:hover {
+    transform: translateY(-12px) scale(1.05);
+
+}
+
+section {
+    scroll-margin-top: 0;
+}
+
+
+/* Responsive */
+
+
+@media (max-width: 768px) {
+
+    /* General  */
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    /*  Hero  */
+    .hero {
+        height: auto;
+        padding: 60px 0;
+    }
+.clinic h2::before{
+    width: 80px;   
+        height: 35px;
+        margin: 0 auto -10px;
+}
+    .hero-content {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+  .hero-subtitle::before {
+        width: 80px;   
+        height: 40px;
+        margin: 0 auto -10px; 
+    }
+
+.team h2::before {
+  width: 80px; 
+        height: 35px;
+        margin: 0 auto -10px;
+}
+
+    .hero-subtitle {
+        font-size: 32px; 
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    /*  Team */
+    .team h2 {
+        font-size: 34px;
+        margin-bottom: 40px;
+    }
+
+   .doctor {
+    flex-direction: column;
+    text-align: center;
+  }
+  .doctor img {
+    width: 200px;
+    height: auto;
+  }
+  .doctor-info h3,
+  .doctor-info h4,
+  .doctor-info p {
+    text-align: center;
+  }
+
+
+    /*  Clinic  */
+    .clinic h2 {
+        font-size: 32px;
+        
+    }
+
+    .clinic-intro {
+        padding: 0 10px;
+    }
+
+}
