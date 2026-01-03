@@ -1,7 +1,7 @@
 import React from "react";
 import TraditionalServices from "./TraditionalServices";
 import IntegrativeServices from "./IntegrativeServices";
-import dog4 from "../tabark/images/dog4.jpeg";
+import dog4 from "./images/dog4.jpeg";
 
 function ContentSection() {
   return (

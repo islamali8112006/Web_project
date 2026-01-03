@@ -1,3 +1,4 @@
+import React from "react";
 
 const ServicesGrid = ({ services }) => {
   return (
@@ -8,7 +9,7 @@ const ServicesGrid = ({ services }) => {
             fontFamily: "Glyphicons Halflings",
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
-            gap: "40px"
+            gap: "40px" 
           }}
         >
           {services.map((service, index) => (

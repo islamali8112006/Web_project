@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {HashRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 
 import ContainerComponent from "./tabark/container.jsx";
@@ -13,9 +13,9 @@ import AppointmentPage from "./Soma/components/RequestAnAppointment.jsx";
 
 function App() {
   return (
-   
+      
       <Routes>
-        {/* كل الصفحات اللي فيها هيدر وفوتر */}
+    
         <Route element={<Layout/>}>
           <Route path="/" element={<ContainerComponent />} />
             <Route path="/home" element={<ContainerComponent />} />
@@ -31,6 +31,7 @@ function App() {
         {/* صفحة 404 بدون هيدر وفوتر */}
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
+   
     
   );
 }
